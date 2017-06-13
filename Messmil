@@ -1,0 +1,45 @@
+#include<stdio.h>
+main()
+{
+    float milnum; // number of total mills
+    float milcost; // mil cost
+    float milrate;
+    float stoke ; // joma
+    float cashback;
+    float moneyhavetogive; //declaration of all variables
+
+    printf("Enter  amount of money given by mess member   ,  number of mils &  milrate\n");
+
+    scanf("%f %f %f",&stoke,&milnum,&milrate); //Initialization of first 3 variable by scanf function from keyboard
+
+    milcost=milnum*milrate;
+    milcost=milcost+250; // addition of khalar bill
+
+
+    cashback=stoke-milcost;
+    cashback= fabsf(stoke-milcost)   ; //making the variable positive
+
+    moneyhavetogive=milcost-stoke;
+    moneyhavetogive= fabsf(milcost-stoke)   ;  //making the variable positive
+
+
+    if( stoke>milcost){
+
+
+        printf("The mess member will get momey back=%f",moneyhavetogive); // first condition
+
+
+
+    }
+
+
+    else{
+
+
+        printf("The mess member have to give money = %f",cashback); //last condition
+}
+
+
+
+
+}
