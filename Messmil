@@ -4,7 +4,7 @@ main()
     float milnum; // number of total mills
     float milcost; // mil cost
     float milrate;
-    float stoke ; // joma
+    float stoke ; 
     float cashback;
     float moneyhavetogive; //declaration of all variables
 
